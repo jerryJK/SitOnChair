@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "raleway", Helvetica, serif;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.3em;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*HEADER*/
+
+.header-main {
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+
+/*HEADER LOGO*/
+
+.header-main__logo {
+    color: white;
+    float: left;
+}
+
+.text-color {
+    color: rgb(39, 199, 171);
+    margin: 0 5px;
+}
+
+
+/* HEADER NAV */
+
+.header-main__nav {
+    float: right;
+}
+
+.nav__item {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*DROPDOWN*/
+
+.nav__item--dropdown:hover .dropdown__menu {
+    display: block;
+}
+
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    width: 140px;
+    z-index: 1;
+    margin-top: 7px;
+    margin-left: -35px;
+}
+
+.dropdown__menu a {
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: black;
+    padding: 3px 20px;
+}
+
+.dropdown__menu a:first-child {
+    padding-top: 7px;
+}
+
+.dropdown__menu a:last-child {
+    padding-bottom: 7px;
+}
+
+.dropdown__menu a:hover {
+    font-weight: bold;
+}
+
+.dropdown__menu::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent black transparent;
+}
