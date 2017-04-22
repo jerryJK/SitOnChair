@@ -204,3 +204,69 @@ body {
   padding: 15px 25px 15px 25px;
   display: block;
 }
+
+
+/*SECTION CHAIRS*/
+
+.chairs {
+  background-color: white;
+  padding: 35px 0 70px 0;
+  width: 100%;
+}
+
+.chairs__article {
+  width: 31%;
+  height: 220px;
+  float: left;
+  margin-right: 35px;
+  box-sizing: border-box;
+}
+
+.chairs__article--clair {
+  background-image: url(../images/box1_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.chairs__article--margarita {
+  background-image: url(../images/box2_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.chairs__article--findAll {
+  margin-right: 0;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  height: 250px;
+}
+
+.chairs__article--findAll p {
+  font-weight: normal;
+  font-size: 15px;
+  color: grey;
+  padding: 10px 10px;
+}
+
+.article__header {
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  padding: 10px 10px;
+  position: relative;
+  top: 155px;
+}
+
+.article__header--findAll {
+  top: 5px;
+}
+
+.article__header::after {
+  content: "";
+  display: block;
+  width: 155px;
+  height: 8px;
+  margin: 3px 0 4px 0;
+  background-color: rgb(39, 199, 171);
+}
