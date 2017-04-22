@@ -447,3 +447,122 @@ body {
   background-color: white;
   color: rgb(39, 199, 171);
 }
+
+
+
+/*SECTION CONTACT*/
+
+.contact {
+  background-color: white;;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.contact__header h2 {
+  font-weight: 500;
+  color: rgb(92, 86, 87);
+}
+
+.contact__header::after {
+  content: "";
+  display: block;
+  width: 31%;
+  height: 8px;
+  margin: 5px 0 45px 0;
+  background-color: rgb(39, 199, 171);
+}
+
+.contact__form {
+  height: 370px;
+}
+
+.form__leftForm {
+  width: 62%;
+  float:left;
+  height: 100%;
+}
+
+.form__rightForm {
+  width: 32%;
+  float: right;
+  height: 100%;
+  position: relative;
+}
+
+.leftForm__input {
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+  border: 1px solid rgb(39, 199, 171);
+  font-family: "raleway", Helvetica, serif;
+  font-size: 22px;
+  text-indent: 5px;
+}
+
+.leftForm__input--textarea {
+  height: 187px;
+  resize: none;
+}
+
+.rightForm__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  position: relative;
+  top: -15px;
+}
+
+.rightForm__button {
+  width: 100%;
+  padding: 8px 0 8px 0;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color:  rgb(39, 199, 171);
+  text-align: center;
+  position: absolute;
+  font-family: "raleway", Helvetica, serif;
+  font-weight: bold;
+  bottom: 17px;
+  display: block;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.rightForm__checkboxLabel {
+  font-size: 17px;
+  font-weight: normal;
+  color: rgb(142, 140, 140);
+  cursor: pointer;
+  text-align: justify;
+  float: left;
+}
+
+.checkbox {
+  position: relative;
+  top: 5px;
+  left: 2px;
+  width: 28px;
+  height: 28px;
+  margin-right: 15px;
+  vertical-align: top;
+  cursor: pointer;
+  float: left;
+  background-image: url(../images/form_ok.jpg);
+}
+
+.checkbox:checked + .boxCover {
+  background-image: url(../images/form_ok.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.boxCover {
+  width: 31px;
+  height: 31px;
+  background-color: white;
+  border: 1px solid rgb(39, 199, 171);
+  position: relative;
+  top: -39px;
+}
