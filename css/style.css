@@ -270,3 +270,180 @@ body {
   margin: 3px 0 4px 0;
   background-color: rgb(39, 199, 171);
 }
+
+
+
+
+/*SECTION PRICELIST*/
+
+.price-list {
+  background-color: rgb(241, 241, 241);
+  padding: 40px 0 70px 0;
+  width: 100%;
+}
+
+.price-list__header h2 {
+  font-weight: 500;
+  color: rgb(92, 86, 87);
+}
+
+.price-list__header::after {
+  content: "";
+  display: block;
+  width: 31%;
+  height: 8px;
+  margin: 5px 0 65px 0;
+  background-color: rgb(39, 199, 171);
+}
+
+
+.price-list__box {
+    width: 31%;
+    height: 480px;
+    float: left;
+    margin-right: 35px;
+    box-sizing: border-box;
+    border: 2px solid rgb(195, 195, 195);
+    position: relative;
+}
+
+.price-list__box::before {
+  background-color: white;
+  content: "";
+  width: 52px;
+  height: 52px;
+  border: 2px solid rgb(195, 195, 195);
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  margin-left: -27px;
+  left: 50%;
+
+}
+
+.price-list__box::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: rgb(195, 195, 195);
+  border: 2px solid rgb(195, 195, 195);
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  margin-left: -12px;
+
+}
+
+.price-list__box--active::after {
+  background-color: white;
+  border: 2px solid white;
+}
+
+.price-list__box--active::before {
+  background-color: rgb(39, 199, 171);
+  border: 2px solid rgb(39, 199, 171);
+}
+
+.price-list__box--advanced {
+  margin-right: 0;
+}
+
+.price-list__box {
+  background-color: white;
+}
+
+.price-list__box--active {
+  background-color: rgb(39, 199, 171);
+  border: 2px solid rgb(39, 199, 171);
+}
+
+.price-list__box h2 {
+  font-weight: normal;
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(39, 199, 171);
+}
+
+.price-list__box--active h2 {
+  color: white;
+}
+
+.box__price {
+  border: 2px solid rgb(195, 195, 195);
+  width: 125px;
+  height:125px;
+  border-radius: 50%;
+  margin: 30px auto;
+  color: rgb(195, 195, 195);
+  text-align: center;
+}
+
+.price-list__box--active .box__price {
+  background-color: white;
+  border: 2px solid white;
+  color: rgb(39, 199, 171);
+}
+
+.box__price h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(195, 195, 195);
+}
+
+.price-list__box--active .box__price h2 {
+  color: rgb(39, 199, 171);
+}
+
+.box__price sup {
+  position: relative;
+  top:-4px;
+  font-size: 20px;
+}
+
+
+.price-list__box ul {
+  list-style-type: none;
+}
+
+.price-list__box li {
+  color: rgb(161, 153, 153);
+  font-weight: 500;
+  font-size: 22px;
+  padding: 7px 10px;
+  text-align: center;
+}
+
+.price-list__box li:nth-child(odd) {
+  background-color: rgb(228, 228, 228);
+}
+
+.price-list__box li:nth-child(even) {
+  background-color: rgb(241, 241, 241);
+}
+
+.price-list__box--active li:nth-child(odd) {
+  background-color: rgb(241, 241, 241);
+}
+
+.price-list__box--active li:nth-child(even) {
+  background-color: rgb(228, 228, 228);
+}
+
+.box__button {
+  position: absolute;
+  border-radius: 10px;
+  bottom: 20px;
+  left: 95px;
+  background-color:  rgb(39, 199, 171);
+  padding: 5px 27px;
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.price-list__box--active .box__button {
+  background-color: white;
+  color: rgb(39, 199, 171);
+}
