@@ -13,7 +13,6 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 5px 0;
 }
 
 .clearfix::after {
@@ -39,6 +38,7 @@ body {
 .header-main__logo {
     color: white;
     float: left;
+    padding: 7px 0;
 }
 
 .text-color {
@@ -56,11 +56,13 @@ body {
 .nav__item {
     display: inline-block;
     margin-left: 40px;
+    padding: 7px 0;
 }
 
 .nav__item a {
     text-decoration: none;
     color: white;
+    padding: 7px 0;
 }
 
 
@@ -87,6 +89,7 @@ body {
     text-align: left;
     background-color: black;
     padding: 3px 20px;
+    borer: 1px solid red;
 }
 
 .dropdown__menu a:first-child {
