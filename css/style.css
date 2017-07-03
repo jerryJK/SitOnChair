@@ -151,15 +151,29 @@ body {
     float: right;
 }
 
-.carousel__image {
+.carousel__inner {
     width: 380px;
     height: 337px;
     margin-left: 30px;
     float: left;
-    background-image: url(../images/black_chair.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 150% 120%;
+}
+
+.carousel__inner ul {
+    list-style-type: none;
+}
+
+.inner__item {
+    display: none;
+}
+
+.inner__item img {
+    position: relative;
+    top: 10px;
+    right: 35px;
+}
+
+.visible {
+    display: block;
 }
 
 .carousel__banner {
@@ -447,7 +461,6 @@ body {
 
 .contact {
     background-color: white;
-    ;
     padding: 40px 0;
     width: 100%;
 }
